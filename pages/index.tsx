@@ -13,41 +13,35 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Piotr Ostrowski</h1>
-        <h1>
-          <a href="https://nextjs.org">CV</a>,{" "}
-          <a href="https://typescript.org">Github</a>{" "}
-        </h1>
+        <h2>
+          <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
+            Resume part 1
+          </a>
+          ,{" "}
+          <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
+            part 2
+          </a>
+          , <a href="https://github.com/piotrostr/">Github</a>,{" "}
+        </h2>
         <p className={styles.description}>
-          Please find below some of the more viusal projects I had a chance to
-          work on:
+          Please find below some of the open-source projects I have worked on.
         </p>
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://smplverse.xyz" className={styles.card}>
+            <h2>SMPLverse</h2>
+            <p style={{ textAlign: "center" }}>🤖</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://health-token.com" className={styles.card}>
+            <h2>Health Token</h2>
+            <p style={{ textAlign: "center" }}>🌱</p>
           </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://pixilartillery.io" className={styles.card}>
+            <h2>PixilArtillery</h2>
+            <p style={{ textAlign: "center" }}>🔫</p>
           </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="https://stoned-cookies.vercel.app" className={styles.card}>
+            <h2>Stoned Cookies</h2>
+            <p style={{ textAlign: "center" }}>🍪</p>
           </a>
         </div>
       </main>
@@ -60,9 +54,8 @@ const Home: NextPage = () => {
             flexDirection: "column",
           }}
         >
-          <span>Have a great day! </span>
-          <br />
-          <span style={{ color: "#e25555" }}>&#9829;</span>
+          <h2>Have a great day! </h2>
+          <span style={{ color: "#e25555" }}>❤️</span>
         </div>
       </footer>
     </div>
