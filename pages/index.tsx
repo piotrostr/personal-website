@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -18,59 +18,53 @@ const Home: NextPage = () => {
             <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
               Resume
             </a>
-            {"  "}-{"  "}
+            {'  '}-{'  '}
             <a href="https://github.com/piotrostr/">Github</a>
-            {"  "}-{"  "}
+            {'  '}-{'  '}
             <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf">
               Recent Jobs
             </a>
           </h2>
         </div>
         <br />
-        <Image
-          src={"/piotr.png"}
-          width={229 * 1.5}
-          height={271 * 1.5}
-          alt="piotr"
-        />
-        <div className={styles.grid} style={{ marginTop: "3rem" }}>
+        <div className={styles.grid} style={{ marginTop: '3rem' }}>
           <a href="https://smplverse.xyz" className={styles.card}>
             <h2>SMPLverse</h2>
-            <p style={{ textAlign: "center" }}>🤖</p>
+            <p style={{ textAlign: 'center' }}>🤖</p>
           </a>
           <a href="https://health-token.com" className={styles.card}>
             <h2>Health Token</h2>
-            <p style={{ textAlign: "center" }}>🌱</p>
+            <p style={{ textAlign: 'center' }}>🌱</p>
           </a>
           <a href="https://pixilartillery.io" className={styles.card}>
             <h2>Pixil Artillery</h2>
-            <p style={{ textAlign: "center" }}>🔫</p>
+            <p style={{ textAlign: 'center' }}>🔫</p>
           </a>
           <a href="https://stoned-cookies.vercel.app" className={styles.card}>
             <h2>Stoned Cookies</h2>
-            <p style={{ textAlign: "center" }}>🍪</p>
+            <p style={{ textAlign: 'center' }}>🍪</p>
           </a>
           <a href="https://okemonos.com" className={styles.card}>
             <h2>Okemonos</h2>
-            <p style={{ textAlign: "center" }}>🐲</p>
+            <p style={{ textAlign: 'center' }}>🐲</p>
           </a>
           <a href="https://www.luifs.com" className={styles.card}>
             <h2>LUIFS</h2>
-            <p style={{ textAlign: "center" }}>📈</p>
+            <p style={{ textAlign: 'center' }}>📈</p>
           </a>
         </div>
       </main>
       <footer className={styles.footer}>
         <div
           style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
           }}
         >
-          <h2>Have a great day! </h2>
-          <span style={{ color: "#e25555" }}>❤️</span>
+          <h3>Have a great day!</h3>
+          <span style={{ color: 'green' }}>{'♡'}</span>
         </div>
       </footer>
     </div>
