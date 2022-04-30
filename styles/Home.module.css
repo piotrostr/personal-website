@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.underline a:hover {
+  text-decoration: underline;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -58,7 +62,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 600px;
 }
 
 .card {
@@ -76,8 +80,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: green;
+  border-color: green;
 }
 
 .card h2 {

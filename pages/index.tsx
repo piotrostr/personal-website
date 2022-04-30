@@ -13,20 +13,27 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Piotr Ostrowski</h1>
-        <h2>
-          <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
-            Resume part 1
-          </a>
-          ,{" "}
-          <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
-            part 2
-          </a>
-          , <a href="https://github.com/piotrostr/">Github</a>,{" "}
-        </h2>
-        <p className={styles.description}>
-          Please find below some of the open-source projects I have worked on.
-        </p>
-        <div className={styles.grid}>
+        <div className={styles.underline}>
+          <h2>
+            <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
+              Resume
+            </a>
+            {"  "}-{"  "}
+            <a href="https://github.com/piotrostr/">Github</a>
+            {"  "}-{"  "}
+            <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf">
+              Recent Jobs
+            </a>
+          </h2>
+        </div>
+        <br />
+        <Image
+          src={"/piotr.png"}
+          width={229 * 1.5}
+          height={271 * 1.5}
+          alt="piotr"
+        />
+        <div className={styles.grid} style={{ marginTop: "3rem" }}>
           <a href="https://smplverse.xyz" className={styles.card}>
             <h2>SMPLverse</h2>
             <p style={{ textAlign: "center" }}>🤖</p>
@@ -36,12 +43,20 @@ const Home: NextPage = () => {
             <p style={{ textAlign: "center" }}>🌱</p>
           </a>
           <a href="https://pixilartillery.io" className={styles.card}>
-            <h2>PixilArtillery</h2>
+            <h2>Pixil Artillery</h2>
             <p style={{ textAlign: "center" }}>🔫</p>
           </a>
           <a href="https://stoned-cookies.vercel.app" className={styles.card}>
             <h2>Stoned Cookies</h2>
             <p style={{ textAlign: "center" }}>🍪</p>
+          </a>
+          <a href="https://okemonos.com" className={styles.card}>
+            <h2>Okemonos</h2>
+            <p style={{ textAlign: "center" }}>🐲</p>
+          </a>
+          <a href="https://www.luifs.com" className={styles.card}>
+            <h2>LUIFS</h2>
+            <p style={{ textAlign: "center" }}>📈</p>
           </a>
         </div>
       </main>
