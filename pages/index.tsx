@@ -44,6 +44,10 @@ const Home: NextPage = () => {
             <h2>Stoned Cookies</h2>
             <p style={{ textAlign: 'center' }}>🍪</p>
           </a>
+          <a href="https://domi-owczarek.biz" className={styles.card}>
+            <h2>Domi's Portfolio</h2>
+            <p style={{ textAlign: 'center' }}>🐭</p>
+          </a>
           <a href="https://okemonos.com" className={styles.card}>
             <h2>Okemonos</h2>
             <p style={{ textAlign: 'center' }}>🐲</p>
