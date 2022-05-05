@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Card, Slideshow } from '../components';
-import { data } from '../data';
+import { nfts, websites, favourites } from '../data';
 
 const Home: NextPage = () => {
   return (
@@ -29,27 +29,37 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+        <h2>Personal Favourites</h2>
         <Slideshow>
           <a href="https://smplverse.xyz">
-            <Card {...data.smplverse} />
+            <Card {...favourites.smplverse} />
           </a>
+        </Slideshow>
+        <h2>Full stack projects</h2>
+        <Slideshow>
           <a href="https://health-token.com">
-            <Card {...data.healthToken} />
-          </a>
-          <a href="https://pixilartillery.io">
-            <Card {...data.pixilArtillery} />
-          </a>
-          <a href="https://stoned-cookies.vercel.app">
-            <Card {...data.stonedCookies} />
+            <Card {...websites.healthToken} />
           </a>
           <a href="https://domi-owczarek.biz">
-            <Card {...data.domi} />
-          </a>
-          <a href="https://okemonos.com">
-            <Card {...data.okemonos} />
+            <Card {...websites.domi} />
           </a>
           <a href="https://www.luifs.com">
-            <Card {...data.luifs} />
+            <Card {...websites.luifs} />
+          </a>
+        </Slideshow>
+        <h2>NFTs</h2>
+        <Slideshow>
+          <a href="https://pixilartillery.io">
+            <Card {...nfts.pixilArtillery} />
+          </a>
+          <a href="https://stoned-cookies.vercel.app">
+            <Card {...nfts.stonedCookies} />
+          </a>
+          <a href="https://okemonos.com">
+            <Card {...nfts.okemonos} />
+          </a>
+          <a href="https://web.archive.org/web/20210914124213/https://www.skelftees.com/">
+            <Card {...nfts.skelftees} />
           </a>
         </Slideshow>
       </main>
