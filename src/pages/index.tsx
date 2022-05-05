@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Card } from '../components';
-// import data from ./data.json';
+import { data } from '../data';
 
 const Home: NextPage = () => {
   return (
@@ -29,29 +29,25 @@ const Home: NextPage = () => {
         <br />
         <div style={{ marginTop: '3rem' }}>
           <a href="https://smplverse.xyz">
-            <Card title={'SMPLverse'} emoji={'🤖'} description={'desc'} />
+            <Card {...data.smplverse} />
           </a>
           <a href="https://health-token.com">
-            <Card title={'Health Token'} emoji={'🌱'} description={'desc'} />
+            <Card {...data.healthToken} />
           </a>
           <a href="https://pixilartillery.io">
-            <Card title={'Pixil Artillery'} emoji={'🔫'} description={'desc'} />
+            <Card {...data.pixilArtillery} />
           </a>
           <a href="https://stoned-cookies.vercel.app">
-            <Card title={'Stoned Cookies'} emoji={'🍪'} description={'desc'} />
+            <Card {...data.stonedCookies} />
           </a>
           <a href="https://domi-owczarek.biz">
-            <Card
-              title={"Domi's Portfolio"}
-              emoji={'🐭'}
-              description={'desc'}
-            />
+            <Card {...data.domi} />
           </a>
           <a href="https://okemonos.com">
-            <Card title={'Okemonos'} emoji={'🐲'} description={'desc'} />
+            <Card {...data.okemonos} />
           </a>
           <a href="https://www.luifs.com">
-            <Card title={'LUIFS'} emoji={'📈'} description={'desc'} />
+            <Card {...data.luifs} />
           </a>
         </div>
       </main>
