@@ -17,13 +17,24 @@ const Home: NextPage = () => {
           <h1 className="text-2xl">Piotr Ostrowski</h1>
           <div>
             <div className="text-blue">
-              <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
+              <a
+                href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf"
+                className="hover:underline"
+              >
                 Resume
               </a>
               {'  '}-{'  '}
-              <a href="https://github.com/piotrostr/">Github</a>
+              <a
+                href="https://github.com/piotrostr/"
+                className="hover:underline"
+              >
+                Github
+              </a>
               {'  '}-{'  '}
-              <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf">
+              <a
+                href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf"
+                className="hover:underline"
+              >
                 Recent Jobs
               </a>
             </div>
@@ -31,23 +42,29 @@ const Home: NextPage = () => {
         </div>
         <h2>Personal Favourites</h2>
         <Slideshow>
+          <a href="https://github.com/piotrostr/yolo-tensorrt">
+            <Card {...favourites.accelerate} />
+          </a>
           <a href="https://smplverse.xyz">
             <Card {...favourites.smplverse} />
           </a>
-        </Slideshow>
-        <h2>Full stack projects</h2>
-        <Slideshow>
           <a href="https://health-token.com">
-            <Card {...websites.healthToken} />
+            <Card {...favourites.healthToken} />
           </a>
+        </Slideshow>
+        <h2>Websites</h2>
+        <Slideshow>
           <a href="https://domi-owczarek.biz">
             <Card {...websites.domi} />
           </a>
           <a href="https://www.luifs.com">
             <Card {...websites.luifs} />
           </a>
+          <a href="https://www.premiere.sh">
+            <Card {...websites.premiere} />
+          </a>
         </Slideshow>
-        <h2>NFTs</h2>
+        <h2>NFT Collections</h2>
         <Slideshow>
           <a href="https://pixilartillery.io">
             <Card {...nfts.pixilArtillery} />
@@ -58,7 +75,7 @@ const Home: NextPage = () => {
           <a href="https://okemonos.com">
             <Card {...nfts.okemonos} />
           </a>
-          <a href="https://web.archive.org/web/20210914124213/https://www.skelftees.com/">
+          <a href="https://opensea.io/collection/skelftees-v2">
             <Card {...nfts.skelftees} />
           </a>
         </Slideshow>
