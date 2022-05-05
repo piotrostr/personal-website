@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./src/pages/**/*.tsx', './src/components/**/*.tsx'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        blue: '#0066cc',
+      },
+    },
   },
   plugins: [],
 };

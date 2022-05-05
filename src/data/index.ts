@@ -1,53 +1,53 @@
 export interface Entry {
   title: string;
-  emoji: string;
   description: string;
 }
 
 export interface Data {
   smplverse: Entry;
   healthToken: Entry;
-  pixilArtillery: Entry;
-  stonedCookies: Entry;
   domi: Entry;
-  okemonos: Entry;
   luifs: Entry;
 }
+
+export interface NFTs {
+  stonedCookies: Entry;
+  pixilArtillery: Entry;
+  okemonos: Entry;
+}
+
+export interface Repos {}
 
 export const data: Data = {
   smplverse: {
     title: 'SMPLverse',
-    emoji: '🤖',
-    description: '',
+    description: 'When AI meets NFTs.',
   },
   healthToken: {
     title: 'Health Token',
-    emoji: '🌱',
+    description: "Dietician's companion.",
+  },
+  luifs: {
+    title: 'LUIFS Ghosal',
+    description: 'Biggest LU society.',
+  },
+  domi: {
+    title: "Domi's portfolio",
+    description: '',
+  },
+};
+
+export const nftCollections = {
+  okemonos: {
+    title: 'Okemonos',
     description: '',
   },
   pixilArtillery: {
     title: 'Pixil Artillery',
-    emoji: '🔫',
-    description: '',
+    description: 'Pixel guns on ethereum',
   },
   stonedCookies: {
     title: 'Stoned Cookies',
-    emoji: '🍪',
-    description: '',
-  },
-  domi: {
-    title: "Domi's portfolio",
-    emoji: '🐭',
-    description: '',
-  },
-  okemonos: {
-    title: 'Okemonos',
-    emoji: '🐲',
-    description: '',
-  },
-  luifs: {
-    title: 'LUIFS',
-    emoji: '📈',
-    description: '',
+    description: 'Mint a stoned cookie.',
   },
 };

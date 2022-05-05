@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Card } from '../components';
+import { Card, Slideshow } from '../components';
 import { data } from '../data';
 
 const Home: NextPage = () => {
@@ -12,22 +12,24 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Piotr Ostrowski</h1>
-        <div>
-          <h2>
-            <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
-              Resume
-            </a>
-            {'  '}-{'  '}
-            <a href="https://github.com/piotrostr/">Github</a>
-            {'  '}-{'  '}
-            <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf">
-              Recent Jobs
-            </a>
-          </h2>
-        </div>
         <br />
-        <div style={{ marginTop: '3rem' }}>
+        <div className="flex flex-col content-center items-center">
+          <h1 className="text-2xl">Piotr Ostrowski</h1>
+          <div>
+            <div className="text-blue">
+              <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf">
+                Resume
+              </a>
+              {'  '}-{'  '}
+              <a href="https://github.com/piotrostr/">Github</a>
+              {'  '}-{'  '}
+              <a href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf">
+                Recent Jobs
+              </a>
+            </div>
+          </div>
+        </div>
+        <Slideshow>
           <a href="https://smplverse.xyz">
             <Card {...data.smplverse} />
           </a>
@@ -49,7 +51,7 @@ const Home: NextPage = () => {
           <a href="https://www.luifs.com">
             <Card {...data.luifs} />
           </a>
-        </div>
+        </Slideshow>
       </main>
       <footer>
         <div
@@ -60,8 +62,12 @@ const Home: NextPage = () => {
             flexDirection: 'column',
           }}
         >
-          <h3>Have a great day!</h3>
-          <span style={{ color: 'green' }}>{'♡'}</span>
+          <a
+            className="text-blue hover:no-underline"
+            href="https://etherscan.io/address/0x2ed29d982b0120d49899a7cc7afe7f5d5435bc97"
+          >
+            <span>{'♡'}</span>
+          </a>
         </div>
       </footer>
     </div>
