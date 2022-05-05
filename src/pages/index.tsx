@@ -12,75 +12,93 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <br />
-        <div className="flex flex-col content-center items-center">
-          <h1 className="text-2xl">Piotr Ostrowski</h1>
-          <div>
-            <div className="text-blue">
-              <a
-                href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf"
-                className="hover:underline"
-              >
-                Resume
-              </a>
-              {'  '}-{'  '}
-              <a
-                href="https://github.com/piotrostr/"
-                className="hover:underline"
-              >
-                Github
-              </a>
-              {'  '}-{'  '}
-              <a
-                href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf"
-                className="hover:underline"
-              >
-                Recent Jobs
-              </a>
+        <div className="md:flex md:flex-col md:items-center">
+          <br />
+          <div className="flex flex-col content-center items-center p-5">
+            <h1 className="text-3xl">Piotr Ostrowski</h1>
+            <div>
+              <div className="text-blue">
+                <a
+                  href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf"
+                  className="hover:underline"
+                >
+                  Resume
+                </a>
+                {'  '}-{'  '}
+                <a
+                  href="https://github.com/piotrostr/"
+                  className="hover:underline"
+                >
+                  Github
+                </a>
+                {'  '}-{'  '}
+                <a
+                  href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf"
+                  className="hover:underline"
+                >
+                  Recent Jobs
+                </a>
+              </div>
             </div>
           </div>
+          <div className="md:max-w-2xl">
+            <div className="p-8 text-center mb-13 max-w-md m-auto">
+              <div>Hello there!</div>
+              <br />
+              <div className="mt-2">
+                In case you would need to contact me please find my details in
+                the resume above, otherwise feel free to scroll down through
+                some of my projects!
+              </div>
+              <div className="my-2">*</div>
+              <div className="mt-2">
+                Everything here is available under MIT license (including this
+                website as well), feel free to check out the code on my github.
+              </div>
+            </div>
+            <h2 className="m-3 text-lg">Personal Favourites</h2>
+            <Slideshow>
+              <a href="https://github.com/piotrostr/yolo-tensorrt">
+                <Card {...favourites.accelerate} />
+              </a>
+              <a href="https://smplverse.xyz">
+                <Card {...favourites.smplverse} />
+              </a>
+              <a href="https://health-token.com">
+                <Card {...favourites.healthToken} />
+              </a>
+            </Slideshow>
+            <h2 className="m-3 text-lg">Websites</h2>
+            <Slideshow>
+              <a href="https://domi-owczarek.biz">
+                <Card {...websites.domi} />
+              </a>
+              <a href="https://www.luifs.com">
+                <Card {...websites.luifs} />
+              </a>
+              <a href="https://www.premiere.sh">
+                <Card {...websites.premiere} />
+              </a>
+            </Slideshow>
+            <h2 className="m-3 text-lg">NFT Collections</h2>
+            <Slideshow>
+              <a href="https://pixilartillery.io">
+                <Card {...nfts.pixilArtillery} />
+              </a>
+              <a href="https://stoned-cookies.vercel.app">
+                <Card {...nfts.stonedCookies} />
+              </a>
+              <a href="https://okemonos.com">
+                <Card {...nfts.okemonos} />
+              </a>
+              <a href="https://opensea.io/collection/skelftees-v2">
+                <Card {...nfts.skelftees} />
+              </a>
+            </Slideshow>
+          </div>
         </div>
-        <h2>Personal Favourites</h2>
-        <Slideshow>
-          <a href="https://github.com/piotrostr/yolo-tensorrt">
-            <Card {...favourites.accelerate} />
-          </a>
-          <a href="https://smplverse.xyz">
-            <Card {...favourites.smplverse} />
-          </a>
-          <a href="https://health-token.com">
-            <Card {...favourites.healthToken} />
-          </a>
-        </Slideshow>
-        <h2>Websites</h2>
-        <Slideshow>
-          <a href="https://domi-owczarek.biz">
-            <Card {...websites.domi} />
-          </a>
-          <a href="https://www.luifs.com">
-            <Card {...websites.luifs} />
-          </a>
-          <a href="https://www.premiere.sh">
-            <Card {...websites.premiere} />
-          </a>
-        </Slideshow>
-        <h2>NFT Collections</h2>
-        <Slideshow>
-          <a href="https://pixilartillery.io">
-            <Card {...nfts.pixilArtillery} />
-          </a>
-          <a href="https://stoned-cookies.vercel.app">
-            <Card {...nfts.stonedCookies} />
-          </a>
-          <a href="https://okemonos.com">
-            <Card {...nfts.okemonos} />
-          </a>
-          <a href="https://opensea.io/collection/skelftees-v2">
-            <Card {...nfts.skelftees} />
-          </a>
-        </Slideshow>
       </main>
-      <footer>
+      <footer className="p-8">
         <div
           style={{
             display: 'flex',

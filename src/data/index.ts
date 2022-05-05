@@ -13,7 +13,7 @@ export interface Data {
 export const favourites: Data = {
   accelerate: {
     title: 'Accelerated Inference',
-    description: 'TensorRT the easy way.',
+    description: 'TensorRT - the easy way.',
     imgSrc: 'https://assets.nvidiagrid.net/ngc/logos/Tensorrt.png',
     imgWidth: 400,
   },
