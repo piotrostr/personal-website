@@ -58,7 +58,7 @@ const Home: NextPage = () => {
             </div>
             <h2 className="m-3 text-lg">Personal Favourites</h2>
             <Slideshow>
-              <a href="https://github.com/piotrostr/yolo-tensorrt">
+              <a href="https://medium.com/@piotr.jp.ostrowski/run-tensorrt-in-10-bash-commands-b89a207d61c5">
                 <Card {...favourites.accelerate} />
               </a>
               <a href="https://smplverse.xyz">
