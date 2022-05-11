@@ -51,16 +51,10 @@ const Home: NextPage = () => {
               </p>
               <div className="text-blue flex flex-col">
                 <a
-                  href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/CV.pdf"
+                  href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Piotr%20Ostrowski%2C%20Resume.pdf"
                   className="hover:underline"
                 >
                   Resume
-                </a>
-                <a
-                  href="https://piotr-ostrowski.s3.us-east-2.amazonaws.com/Most%20Recent%20Jobs.pdf"
-                  className="hover:underline"
-                >
-                  Most recent jobs
                 </a>
               </div>
             </div>
