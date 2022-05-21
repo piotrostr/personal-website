@@ -27,7 +27,7 @@ export const favourites: Data = {
   healthToken: {
     title: 'Health Token',
     description: "Dietician's companion.",
-    imgSrc: 'https://health-token.com/_next/image?url=%2Flogo.svg&w=256&q=75',
+    imgSrc: 'https://health-token.com/logo.svg',
     imgWidth: 150,
   },
 };
