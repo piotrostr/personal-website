@@ -17,9 +17,15 @@ export const favourites: Data = {
     imgSrc: 'https://assets.nvidiagrid.net/ngc/logos/Tensorrt.png',
     imgWidth: 400,
   },
+  goData: {
+    title: 'GoData',
+    description: 'Fast, secure and scalable metadata server for OpenSea.',
+    imgSrc: 'https://miro.medium.com/max/960/1*Omyx9_Tare9Dyhht9m9Ivw.jpeg',
+    imgWidth: 150,
+  },
   smplverse: {
     title: 'SMPLverse',
-    description: 'When AI meets NFTs.',
+    description: 'When AI meets Blockchain.',
     imgSrc: '/smplverse.png',
     imgWidth: 350,
     rounded: false,
@@ -29,6 +35,13 @@ export const favourites: Data = {
     description: "Dietician's companion.",
     imgSrc: 'https://health-token.com/logo.svg',
     imgWidth: 150,
+  },
+  ethNode: {
+    title: 'Save ETH',
+    description: 'Quickstart for running Ethereum nodes.',
+    imgSrc:
+      'https://user-images.githubusercontent.com/63755291/170838921-51455851-e8ec-4bde-a905-1a9818c90a86.png',
+    imgWidth: 100,
   },
 };
 

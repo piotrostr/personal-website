@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <body className="p-3 md:p-8 lg:p-12">
         <script defer></script>
-        <div className="lg:flex lg:flex-row lg:space-x-5">
+        <div className="lg:flex lg:flex-row lg:space-x-5 2xl:justify-center">
           <header className="h-screen sm:h-full">
             <div className="flex flex-col p-5 md:w-full lg:w-max">
               <div className="flex flex-col md:flex-row md:justify-between md:items-center lg:flex-col lg:justify-start lg:items-start">
@@ -34,13 +34,12 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className="p-5 md:p-8 my-12 w-full text-justify italic border-l-2 border-black ml-8 text-md max-w-xs md:max-w-md">
+            <div className="p-5 md:p-8 my-5 md:my-12 w-full text-justify italic border-l-2 border-black ml-8 text-md max-w-xs md:max-w-md">
               <div>Hi there!</div>
               <br />
               <div className="mt-2">
-                In case you would need to contact me please find my details in
-                the resume above, otherwise feel free to scroll down through
-                some of my projects!
+                Glad to see you here, feel free to scroll through some of my
+                projects!
               </div>
               <div className="mt-2">
                 Everything here is available under MIT license (including this{' '}
@@ -59,23 +58,33 @@ const Home: NextPage = () => {
                 </a>
                 ), feel free to check out the code on my github.
               </div>
+              <div className="mt-2">
+                I also write articles about DevOps for{' '}
+                <a
+                  href="https://medium.com/better-programming"
+                  className="text-blue hover:underline"
+                >
+                  Better Programming
+                </a>{' '}
+                on Medium in case you were interested.
+              </div>
               <br />
               <div className="mt-2">Best,</div>
               <div>Piotr</div>
             </div>
           </header>
           <main>
-            <div className="md: ml-5">
-              <h2 className="m-3 text-lg">Personal Favourites</h2>
+            <div className="md:ml-5">
+              <h2 className="m-3 text-lg">DevOps</h2>
               <Slideshow>
                 <a href="https://medium.com/@piotr.jp.ostrowski/run-tensorrt-in-10-bash-commands-b89a207d61c5">
                   <Card {...favourites.accelerate} />
                 </a>
-                <a href="https://smplverse.xyz">
-                  <Card {...favourites.smplverse} />
+                <a href="https://github.com/piotrostr/metadata">
+                  <Card {...favourites.goData} />
                 </a>
-                <a href="https://health-token.com">
-                  <Card {...favourites.healthToken} />
+                <a href="https://github.com/piotrostr/eth-mainnet-light-node">
+                  <Card {...favourites.ethNode} />
                 </a>
               </Slideshow>
               <h2 className="m-3 text-lg">Websites</h2>
@@ -90,8 +99,14 @@ const Home: NextPage = () => {
                   <Card {...websites.premiere} />
                 </a>
               </Slideshow>
-              <h2 className="m-3 text-lg">NFT Collections</h2>
+              <h2 className="m-3 text-lg">Full Stack Crypto Projects</h2>
               <Slideshow>
+                <a href="https://health-token.com">
+                  <Card {...favourites.healthToken} />
+                </a>
+                <a href="https://smplverse.xyz">
+                  <Card {...favourites.smplverse} />
+                </a>
                 <a href="https://stoned-cookies.vercel.app">
                   <Card {...nfts.stonedCookies} />
                 </a>
