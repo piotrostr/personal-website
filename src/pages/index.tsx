@@ -77,13 +77,13 @@ const Home: NextPage = () => {
             <div className="md:ml-5">
               <h2 className="m-3 text-lg">DevOps</h2>
               <Slideshow>
-                <a href="https://medium.com/@piotr.jp.ostrowski/run-tensorrt-in-10-bash-commands-b89a207d61c5">
+                <a href="https://betterprogramming.pub/run-tensorrt-in-10-bash-commands-b89a207d61c5">
                   <Card {...favourites.accelerate} />
                 </a>
                 <a href="https://github.com/piotrostr/metadata">
                   <Card {...favourites.goData} />
                 </a>
-                <a href="https://github.com/piotrostr/eth-mainnet-light-node">
+                <a href="https://betterprogramming.pub/help-ethereum-become-more-secure-and-decentralized-and-set-up-a-node-in-5-minutes-6a0316f2b7">
                   <Card {...favourites.ethNode} />
                 </a>
               </Slideshow>
