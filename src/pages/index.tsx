@@ -110,6 +110,9 @@ const Home: NextPage = () => {
                 <a href="https://github.com/piotrostr/dap">
                   <Card {...favourites.dap} />
                 </a>
+              </Slideshow>
+              <h2 className="m-3 text-lg">NFT Collections</h2>
+              <Slideshow>
                 <a href="https://stoned-cookies.vercel.app">
                   <Card {...nfts.stonedCookies} />
                 </a>

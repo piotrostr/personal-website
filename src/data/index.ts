@@ -45,7 +45,7 @@ export const favourites: Data = {
   },
   dap: {
     title: 'DAP',
-    description: 'Degenerate Ape Party',
+    description: 'Degenerate Ape Party.',
     imgSrc:
       'https://pbs.twimg.com/profile_images/1491130696064245760/tKwNC6T7_400x400.jpg',
     imgWidth: 100,
