@@ -107,6 +107,9 @@ const Home: NextPage = () => {
                 <a href="https://smplverse.xyz">
                   <Card {...favourites.smplverse} />
                 </a>
+                <a href="https://github.com/piotrostr/dap">
+                  <Card {...favourites.dap} />
+                </a>
                 <a href="https://stoned-cookies.vercel.app">
                   <Card {...nfts.stonedCookies} />
                 </a>

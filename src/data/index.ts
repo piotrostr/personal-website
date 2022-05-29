@@ -43,6 +43,13 @@ export const favourites: Data = {
       'https://user-images.githubusercontent.com/63755291/170838921-51455851-e8ec-4bde-a905-1a9818c90a86.png',
     imgWidth: 100,
   },
+  dap: {
+    title: 'DAP',
+    description: 'Degenerate Ape Party',
+    imgSrc:
+      'https://pbs.twimg.com/profile_images/1491130696064245760/tKwNC6T7_400x400.jpg',
+    imgWidth: 100,
+  },
 };
 
 export const websites: Data = {
