@@ -1,28 +1,13 @@
 export const Socials = () => (
   <div className="flex flex-row space-x-3 mt-3 md:mt-1 lg:mt-3 mb-10">
     <a href="https://github.com/piotrostr/">
-      <img
-        src="https://www.svgrepo.com/show/341847/github.svg"
-        width="30"
-        height="30"
-        alt="gh"
-      />
+      <img src="/github.svg" width="30" height="30" alt="gh" />
     </a>
     <a href="https://www.linkedin.com/in/piotr-ostrowski-3979261a3">
-      <img
-        src="https://www.svgrepo.com/show/103404/linkedin-logo.svg"
-        width="30"
-        height="30"
-        alt="linkedin"
-      />
+      <img src="/linkedin.svg" width="30" height="30" alt="linkedin" />
     </a>
     <a href="https://medium.com/@piotr.ostrowski">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png"
-        width="30"
-        height="30"
-        alt="medium"
-      />
+      <img src="/medium.png" width="30" height="30" alt="medium" />
     </a>
     <a href="https://stackoverflow.com/users/14422054/piotr-ostrowski">
       <svg

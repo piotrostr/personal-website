@@ -4,13 +4,10 @@ const nextConfig = {
 };
 
 const ContentSecurityPolicy = `
-        default-src 'self';
-        script-src 'self' 'unsafe-inline' 'unsafe-eval';
-        style-src 'self' 'unsafe-inline';
-        img-src 'self' data:;
-        font-src 'self';
-        connect-src 'self' ws: wss:;
-        base-uri 'self';
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval';
+  style-src 'self' 'unsafe-inline';
+  img-src https: 'self';
 `;
 
 module.exports = {
