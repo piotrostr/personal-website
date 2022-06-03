@@ -4,10 +4,13 @@ const nextConfig = {
 };
 
 const ContentSecurityPolicy = `
-  default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval';
-  style-src 'self' 'unsafe-inline';
+  default-src none;
+  base-uri 'self';
+  form-action 'self';
+  script-src 'self' https: 'unsafe-inline' 'unsafe-eval';
+  style-src 'self' https: 'unsafe-inline';
   img-src https: 'self';
+  frame-ancestors: 'self';
 `;
 
 module.exports = {
@@ -46,11 +49,15 @@ module.exports = {
           },
           {
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
+            value: 'same-origin',
           },
           {
             key: 'X-Content-Type-Options',
             value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
           },
           {
             key: 'Content-Security-Policy',
