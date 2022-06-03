@@ -3,6 +3,16 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
+const ContentSecurityPolicy = `
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        font-src 'self';
+        connect-src 'self' ws: wss:;
+        base-uri 'self';
+`;
+
 module.exports = {
   async headers() {
     return [
@@ -44,6 +54,10 @@ module.exports = {
           {
             key: 'X-Content-Type-Options',
             value: 'nosniff',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
           },
         ],
       },
