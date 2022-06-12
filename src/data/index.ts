@@ -69,9 +69,8 @@ export const websites: Data = {
   premiere: {
     title: 'Premiere',
     description: 'Gaming tournaments.',
-    imgSrc:
-      'https://www.premiere.sh/_next/image?url=%2Fdiamond_logo.svg&w=64&q=75',
-    imgWidth: 105,
+    imgSrc: 'https://www.premiere.sh/diamond_logo.svg',
+    imgWidth: 95,
   },
 };
 
