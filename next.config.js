@@ -10,7 +10,7 @@ const ContentSecurityPolicy = `
   script-src 'self' https: 'unsafe-inline' 'unsafe-eval';
   style-src 'self' https: 'unsafe-inline';
   img-src https: 'self';
-  frame-ancestors: 'self';
+  frame-ancestors 'self';
 `;
 
 module.exports = {
