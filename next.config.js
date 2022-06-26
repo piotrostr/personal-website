@@ -3,17 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-const ContentSecurityPolicy = `
-  default-src none;
-  base-uri 'self';
-  form-action 'self';
-  script-src 'self' https: 'unsafe-inline' 'unsafe-eval';
-  style-src 'self' https: 'unsafe-inline';
-  img-src https: 'self';
-  frame-ancestors 'self';
-`;
+const withPWA = require('next-pwa');
 
-module.exports = {
+module.exports = withPWA({
   async headers() {
     return [
       {
@@ -59,12 +51,11 @@ module.exports = {
             key: 'X-Frame-Options',
             value: 'SAMEORIGIN',
           },
-          {
-            key: 'Content-Security-Policy',
-            value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
-          },
         ],
       },
     ];
   },
-};
+  pwa: {
+    dest: 'public',
+  },
+});
