@@ -1,6 +1,7 @@
 import { createHash, BinaryLike } from 'crypto';
 
 const isProd = process.env.NODE_ENV === 'production';
+console.log(isProd);
 
 export const getCSPHeaders = (inlineScriptSource: BinaryLike) => {
   const csp = [];
@@ -13,7 +14,7 @@ export const getCSPHeaders = (inlineScriptSource: BinaryLike) => {
   csp.push(`base-uri 'self'`);
   csp.push(`form-action 'self'`);
   csp.push(`default-src 'self'`);
-  csp.push(`script-src ${scriptSource}`);
+  csp.push(`script-src www.googletagmanager.com/gtag/js ${scriptSource}`);
   csp.push(`style-src 'self'${isProd ? '' : ` 'unsafe-inline'`}`);
   csp.push(`connect-src 'self' vitals.vercel-insights.com`);
   csp.push(`img-src 'self' data: blob:`);
