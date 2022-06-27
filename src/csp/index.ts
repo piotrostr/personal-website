@@ -15,9 +15,9 @@ export const getCSPHeaders = (inlineScriptSource: BinaryLike) => {
   csp.push(`form-action 'self'`);
   csp.push(`default-src 'self'`);
   csp.push(
-    `script-src https://www.googletagmanager.com/gtag/js?id=GA-T12FY8W6P0 ${scriptSource} 'sha256-TinRgZOAui4+MH5o/E1idHf7gTPA2LJ/3zJQrQJo5+s='`,
+    `script-src https://www.googletagmanager.com/gtag/js ${scriptSource} 'sha256-TinRgZOAui4+MH5o/E1idHf7gTPA2LJ/3zJQrQJo5+s='`,
   );
-  csp.push(`style-src 'self'${isProd ? '' : ` 'unsafe-inline'`}`);
+  csp.push(`style-src 'self' 'unsafe-inline'`);
   csp.push(`connect-src 'self' vitals.vercel-insights.com`);
   csp.push(`img-src 'self' data: blob:`);
   csp.push(`font-src 'self' data:`);
